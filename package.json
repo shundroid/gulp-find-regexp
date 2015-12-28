@@ -1,8 +1,8 @@
 {
-  "name": "gulp-find-regexp",
+  "name": "gulp-find-glob",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "findglob.js",
   "dependencies": {
     "glob": "^6.0.2"
   },
@@ -10,6 +10,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "shundroid",
   "license": "ISC"
 }

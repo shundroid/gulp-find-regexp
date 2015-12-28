@@ -1,5 +1,5 @@
 ## 概要
-gulpで、複数ファイルをgulp.pipeとかしたいとき、`js/*.js`みたいなのが書けるモジュールと書けないモジュール（特にbrowserify）があったから、実装しちゃえ！ということで実装しました。  
+gulpで、複数ファイルをgulp.pipeとかしたいとき、`js/*.js`みたいなのが書けるモジュールと書けないモジュールがあったから、実装しちゃえ！ということで実装しました。  
 globを使っています。
 
 ## 準備
@@ -9,10 +9,9 @@ npm i
 ```
 
 ## 使用例
-gulpfile.jsと同じ階層にfindregexp.jsを入れて
 ```js
-var find = require("./findregexp");
-find("js/*.js", function(files) {
+var find = require("gulp-find-glob");
+find("js/*.js").then((files) => {
   console.log(files) // [ "js/1.js", "js/2.js" ]（例）
 });
 ```

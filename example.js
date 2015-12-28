@@ -1,6 +1,6 @@
 // EXAMPLE (node.js)
 
-var findregexp = require("./findregexp");
-findregexp("./example/*.js", function(files) {
+var findregexp = require("./findglob");
+findregexp("./example/*.js").then((files) => {
   console.log(files);
 });
